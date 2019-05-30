@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller contentMode="scaleAspectFill" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <button width="1" height="1" alignment="center" verticalAlignment="center" title="Tap" id="fLk-vP-RaI">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.97683916579999996" green="1" blue="0.71662755919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" weight="heavy" pointSize="49"/>
+                            <connections>
+                                <action selector="tapped" destination="AgC-eL-Hgc" id="YUE-69-LDh"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="tapButton" destination="fLk-vP-RaI" id="1E3-JK-OH5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="30"/>
+        </scene>
+    </scenes>
+</document>
