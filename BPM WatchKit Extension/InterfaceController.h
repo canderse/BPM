@@ -8,9 +8,12 @@
 
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
-
+#import "../CommonClasses/BFBeatCounter.h"
 @interface InterfaceController : WKInterfaceController
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *tapButton;
 - (IBAction)tapped;
+-(void) checkActivity;
+@property BFBeatCounter * beatCounter;
+@property NSTimer * resetTimer;
 
 @end
