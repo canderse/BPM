@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void) triggerBeat;
 
 -(NSInteger) getBeatsPerMinute;
-
+-(NSDate *) lastEvent;
 @end
 
 NS_ASSUME_NONNULL_END

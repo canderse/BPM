@@ -11,10 +11,11 @@
 @interface ViewController : UIViewController
 
 
-@property BFBeatCounter * beatCounter;
+@property (strong,nonatomic) BFBeatCounter * beatCounter;
+@property (strong,nonatomic) NSTimer * resetTimer;
 @property (weak, nonatomic) IBOutlet UIButton *tapButton;
 - (IBAction)tapped:(UIButton *)sender;
-
+- (void) checkActivity;
 
 
 @end

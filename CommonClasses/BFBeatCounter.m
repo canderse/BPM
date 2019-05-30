@@ -26,6 +26,12 @@
     }
 }
 
+-(NSDate *) lastEvent
+{
+    return [samples lastObject];
+}
+
+
 -(NSInteger) getBeatsPerMinute
 {
     if([samples count] > 3)
