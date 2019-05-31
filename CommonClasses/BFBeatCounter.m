@@ -45,7 +45,7 @@
 
 -(void) reset
 {
-    [samples removeAllObjects];`
+    [samples removeAllObjects];
 }
 -(NSInteger) getBeatsPerMinute
 {
