@@ -53,6 +53,7 @@
         if([[NSDate date] timeIntervalSinceDate:lastEvent] > 100.f)
         {
              [self.tapButton setTitle:@"Tap" forState:UIControlStateNormal];
+            [self.beatCounter reset];
         }
     }
 }
