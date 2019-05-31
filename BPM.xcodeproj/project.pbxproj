@@ -20,6 +20,8 @@
 		710972CC229E3B6A0000F7B8 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710972CB229E3B6A0000F7B8 /* InterfaceController.m */; };
 		710972CF229E3B6A0000F7B8 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 710972CE229E3B6A0000F7B8 /* ExtensionDelegate.m */; };
 		710972D1229E3B6B0000F7B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 710972D0229E3B6B0000F7B8 /* Assets.xcassets */; };
+		7197DCF422A0EEDA0018F1C8 /* BFBPMNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7197DCF322A0EEDA0018F1C8 /* BFBPMNavigationViewController.m */; };
+		7197DCF722A0F0D30018F1C8 /* BFEchoTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7197DCF622A0F0D30018F1C8 /* BFEchoTableTableViewController.m */; };
 		71E49155229F46240096DAFE /* BFBeatCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E49154229F46240096DAFE /* BFBeatCounter.m */; };
 		71E49156229F46240096DAFE /* BFBeatCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E49154229F46240096DAFE /* BFBeatCounter.m */; };
 /* End PBXBuildFile section */
@@ -88,6 +90,10 @@
 		710972CE229E3B6A0000F7B8 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
 		710972D0229E3B6B0000F7B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		710972D2229E3B6B0000F7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7197DCF222A0EEDA0018F1C8 /* BFBPMNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFBPMNavigationViewController.h; sourceTree = "<group>"; };
+		7197DCF322A0EEDA0018F1C8 /* BFBPMNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFBPMNavigationViewController.m; sourceTree = "<group>"; };
+		7197DCF522A0F0D30018F1C8 /* BFEchoTableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFEchoTableTableViewController.h; sourceTree = "<group>"; };
+		7197DCF622A0F0D30018F1C8 /* BFEchoTableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFEchoTableTableViewController.m; sourceTree = "<group>"; };
 		71E49153229F46240096DAFE /* BFBeatCounter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFBeatCounter.h; sourceTree = "<group>"; };
 		71E49154229F46240096DAFE /* BFBeatCounter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFBeatCounter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +149,10 @@
 				710972AE229E3B6A0000F7B8 /* LaunchScreen.storyboard */,
 				710972B1229E3B6A0000F7B8 /* Info.plist */,
 				710972B2229E3B6A0000F7B8 /* main.m */,
+				7197DCF222A0EEDA0018F1C8 /* BFBPMNavigationViewController.h */,
+				7197DCF322A0EEDA0018F1C8 /* BFBPMNavigationViewController.m */,
+				7197DCF522A0F0D30018F1C8 /* BFEchoTableTableViewController.h */,
+				7197DCF622A0F0D30018F1C8 /* BFEchoTableTableViewController.m */,
 			);
 			path = BPM;
 			sourceTree = "<group>";
@@ -311,6 +321,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				710972A8229E3B680000F7B8 /* ViewController.m in Sources */,
+				7197DCF422A0EEDA0018F1C8 /* BFBPMNavigationViewController.m in Sources */,
+				7197DCF722A0F0D30018F1C8 /* BFEchoTableTableViewController.m in Sources */,
 				710972B3229E3B6A0000F7B8 /* main.m in Sources */,
 				71E49155229F46240096DAFE /* BFBeatCounter.m in Sources */,
 				710972A5229E3B680000F7B8 /* AppDelegate.m in Sources */,
