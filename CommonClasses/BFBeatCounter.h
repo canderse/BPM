@@ -13,9 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BFBeatCounter : NSObject
 {
     NSMutableArray * samples;
-    
+    NSInteger _sampleSize;
 }
 
+
+@property (assign,nonatomic) NSInteger  sampleSize;
 
 -(void) triggerBeat;
 

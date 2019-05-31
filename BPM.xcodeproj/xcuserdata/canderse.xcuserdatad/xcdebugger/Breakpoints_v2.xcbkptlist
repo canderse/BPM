@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CommonClasses/BFBeatCounter.m"
-            timestampString = "580876134.624247"
+            timestampString = "580953568.334218"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "-getBeatsPerMinute"
             landmarkType = "7">
          </BreakpointContent>

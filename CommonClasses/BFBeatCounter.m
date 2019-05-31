@@ -14,7 +14,7 @@
 {
     if(self = [super init])
     {
-        samples = [[NSMutableArray alloc] init];
+        self.sampleSize = 4;
     }
     return self;
 }
@@ -22,8 +22,19 @@
 {
     @synchronized (self) {
         [samples insertObject:[NSDate date]  atIndex:0];
-        if([samples count] > 4 ) [samples removeObject:[samples lastObject]];
+        if([samples count] > self.sampleSize + 5 ) [samples removeObject:[samples lastObject]];
     }
+}
+
+-(void) setSampleSize:(NSInteger)sampleSize
+{
+    _sampleSize = sampleSize;
+    samples = [[NSMutableArray alloc] init];
+}
+
+-(NSInteger) sampleSize
+{
+    return _sampleSize;
 }
 
 -(NSDate *) lastEvent
@@ -34,17 +45,17 @@
 
 -(NSInteger) getBeatsPerMinute
 {
-    if([samples count] > 3)
+    if([samples count] > self.sampleSize)
     {
         NSTimeInterval totalTime = 0;
         NSDate * sample = [samples firstObject];
-        for(int i = 1; i < 4;i++)
+        for(int i = 1; i < self.sampleSize + 1;i++)
         {
             NSDate * sample2 = [samples objectAtIndex:i];
             totalTime += [sample timeIntervalSinceDate:sample2];
             sample = sample2;
         }
-        NSTimeInterval seconds = totalTime/4;
+        NSTimeInterval seconds = totalTime/self.sampleSize;
         NSInteger beats = 60 / seconds;
         return beats;
     }
