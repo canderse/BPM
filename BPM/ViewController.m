@@ -39,6 +39,15 @@
     
 }
 
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"ToEchoSegue" )
+        {
+            
+        }
+}
+
 -(void) viewWillAppear:(BOOL)animated
 {
     [self checkActivity];
