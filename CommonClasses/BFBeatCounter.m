@@ -15,15 +15,15 @@
     if(self = [super init])
     {
         self.maxSampleSize = 4;
-        samples = [[NSMutableArray alloc] init];
+        _samples = [[NSMutableArray alloc] init];
     }
     return self;
 }
 -(void) triggerBeat
 {
     @synchronized (self) {
-        [samples insertObject:[NSDate date]  atIndex:0];
-        if([samples count] > self.maxSampleSize + 1) [samples removeObject:[samples lastObject]];
+        [_samples insertObject:[NSDate date]  atIndex:0];
+        if([_samples count] > self.maxSampleSize + 1) [_samples removeObject:[_samples lastObject]];
     }
 }
 
@@ -40,29 +40,29 @@
 
 -(NSDate *) lastEvent
 {
-    return [samples lastObject];
+    return [_samples lastObject];
 }
 
 -(void) reset
 {
-    [samples removeAllObjects];
+    [_samples removeAllObjects];
 }
--(NSInteger) getBeatsPerMinute
+-(float) getBeatsPerMinute
 {
    
-     if([samples count] > 1)
+     if([_samples count] > 1)
     {
         NSTimeInterval totalTime = 0;
        
-        NSDate * sample = [samples firstObject];
-        for(int i = 1; i < [samples count];i++)
+        NSDate * sample = [_samples firstObject];
+        for(int i = 1; i < [_samples count];i++)
         {
-            NSDate * sample2 = [samples objectAtIndex:i];
+            NSDate * sample2 = [_samples objectAtIndex:i];
             totalTime += [sample timeIntervalSinceDate:sample2];
             sample = sample2;
         }
-        NSTimeInterval seconds = totalTime/([samples count] - 1);
-        NSInteger beats = 60 / seconds;
+        NSTimeInterval seconds = totalTime/([_samples count] - 1);
+        float beats = 60 / seconds;
         return beats;
     }
     return 0;

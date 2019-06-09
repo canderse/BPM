@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
     float _bpm;
 }
 @property (assign) float bpm;
+@property (weak, nonatomic) IBOutlet UILabel *wholeNoteLbl;
+@property (weak, nonatomic) IBOutlet UILabel *halfNoteLbl;
+@property (weak, nonatomic) IBOutlet UILabel *quaterNoteLbl;
+@property (weak, nonatomic) IBOutlet UILabel *eighthNoteLbl;
 
 
 @end
