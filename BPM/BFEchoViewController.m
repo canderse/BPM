@@ -28,10 +28,18 @@
 -(void) setBpm:(float)bpm
 {
     _bpm = bpm;
-    _wholeNoteLbl.text = [NSString stringWithFormat:@"%.3f ms",_bpm / 60];
-    _halfNoteLbl.text = [NSString stringWithFormat:@"%.3f ms",_bpm / 60 / 2];
-    _quaterNoteLbl.text = [NSString stringWithFormat:@"%.3f ms",_bpm / 60 / 4];
-    _eighthNoteLbl.text = [NSString stringWithFormat:@"%.3f ms",_bpm / 60 / 8];
+   
+}
+
+
+
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.wholeNoteLbl.text = [NSString stringWithFormat:@"%.3f ms",_bpm / 60];
+    self.halfNoteLbl.text = [NSString stringWithFormat:@"%.3f ms",_bpm / 60 / 2];
+    self.quaterNoteLbl.text = [NSString stringWithFormat:@"%.3f ms",_bpm / 60 / 4];
+    self.eighthNoteLbl.text = [NSString stringWithFormat:@"%.3f ms",_bpm / 60 / 8];
 }
  /*
 #pragma mark - Navigation

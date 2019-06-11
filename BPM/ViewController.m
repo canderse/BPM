@@ -36,6 +36,7 @@
     if(bpm)
     {
         [self.tapButton setTitle:[NSString stringWithFormat:@"%ld",bpm] forState:UIControlStateNormal];
+        self.navigationItem.rightBarButtonItem.enabled = YES;
     }
     
 }
@@ -63,6 +64,7 @@
         if([[NSDate date] timeIntervalSinceDate:lastEvent] > 100.f)
         {
              [self.tapButton setTitle:@"Tap" forState:UIControlStateNormal];
+            self.navigationItem.rightBarButtonItem.enabled = NO;
             [self.beatCounter reset];
         }
     }
