@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "../CommonClasses/BFBeatCounter.h"
 @interface ViewController : UIViewController
-
+{
+    float   _bpm;
+}
 
 @property (strong,nonatomic) BFBeatCounter * beatCounter;
 @property (strong,nonatomic) NSTimer * resetTimer;

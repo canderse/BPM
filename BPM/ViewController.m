@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "BFEchoViewController.h"
 @interface ViewController ()
 
 @end
@@ -31,7 +31,8 @@
 
 - (IBAction)tapped:(UIButton *)sender {
     [self.beatCounter triggerBeat];
-    NSInteger bpm = [self.beatCounter getBeatsPerMinute];
+    _bpm = [self.beatCounter getBeatsPerMinute];
+    NSInteger bpm = _bpm;
     if(bpm)
     {
         [self.tapButton setTitle:[NSString stringWithFormat:@"%ld",bpm] forState:UIControlStateNormal];
@@ -42,9 +43,9 @@
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if([segue.identifier isEqualToString:@"ToEchoSegue" )
+    if([segue.identifier isEqualToString:@"ToEchoSegue" ])
         {
-            
+            ((BFEchoViewController *)segue.destinationViewController).bpm = _bpm;
         }
 }
 

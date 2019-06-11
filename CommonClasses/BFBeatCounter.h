@@ -12,8 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BFBeatCounter : NSObject
 {
-    NSMutableArray * samples;
+    NSMutableArray * _samples;
     NSInteger _maxSampleSize;
+    
 }
 
 
@@ -22,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void) triggerBeat;
 -(void) reset;
--(NSInteger) getBeatsPerMinute;
+-(float) getBeatsPerMinute;
 -(NSDate *) lastEvent;
 @end
 
