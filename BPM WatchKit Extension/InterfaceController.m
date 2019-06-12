@@ -52,12 +52,16 @@
 
 - (IBAction)tapped {
     [self.beatCounter triggerBeat];
-    NSInteger bpm = [self.beatCounter getBeatsPerMinute];
+    _bpm = [self.beatCounter getBeatsPerMinute];
+    NSInteger bpm = _bpm;
     if(bpm)
     {
         [self.tapButton setTitle:[NSString stringWithFormat:@"%ld",bpm] ];
     }
+    
 }
+    
+
 @end
 
 

@@ -10,6 +10,9 @@
 #import <Foundation/Foundation.h>
 #import "../CommonClasses/BFBeatCounter.h"
 @interface InterfaceController : WKInterfaceController
+{
+    float _bpm;
+}
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *tapButton;
 - (IBAction)tapped;
 -(void) checkActivity;

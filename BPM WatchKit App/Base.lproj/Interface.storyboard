@@ -14,10 +14,15 @@
             <objects>
                 <controller contentMode="scaleAspectFill" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
+                        <button width="1" height="20" alignment="right" title="Echo Table &gt;" id="B7Z-Gf-DoH">
+                            <connections>
+                                <segue destination="c4t-ha-grv" kind="push" id="xDp-NB-vza"/>
+                            </connections>
+                        </button>
                         <button width="1" height="1" alignment="center" verticalAlignment="center" title="Tap" id="fLk-vP-RaI">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="backgroundColor" red="0.97683916579999996" green="1" blue="0.71662755919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="font" type="system" weight="heavy" pointSize="49"/>
+                            <fontDescription key="font" type="system" weight="heavy" pointSize="47"/>
                             <connections>
                                 <action selector="tapped" destination="AgC-eL-Hgc" id="YUE-69-LDh"/>
                             </connections>
@@ -28,14 +33,41 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="34" y="30"/>
+            <point key="canvasLocation" x="34" y="10.5"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Echo Interface Controller-->
         <scene sceneID="QSf-PQ-pVm">
             <objects>
-                <controller id="c4t-ha-grv"/>
+                <controller id="c4t-ha-grv" customClass="EchoInterfaceController">
+                    <items>
+                        <group width="1" alignment="left" id="xjH-SL-gPY">
+                            <items>
+                                <imageView width="22" height="23" alignment="left" image="whole" contentMode="top" id="mbV-RD-z5L"/>
+                                <label width="105" alignment="left" text="Label" id="jGO-gQ-g7z"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="yr4-ox-I1e">
+                            <items>
+                                <imageView width="22" height="23" alignment="left" image="half" contentMode="top" id="aZl-Uo-dre"/>
+                                <label width="105" alignment="left" text="Label" id="YV5-jW-LrP"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="rfN-gN-dDB">
+                            <items>
+                                <imageView width="22" height="23" alignment="left" image="quater" contentMode="top" id="Nbq-Ba-aef"/>
+                                <label width="105" alignment="left" text="Label" id="Pe4-Nh-5cW"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="aIG-PT-FQB">
+                            <items>
+                                <imageView width="22" height="23" alignment="left" image="eigtht" contentMode="top" id="56t-S0-nfU"/>
+                                <label width="105" alignment="left" text="Label" id="1YZ-Fp-JHQ"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="310" y="26"/>
+            <point key="canvasLocation" x="308" y="2"/>
         </scene>
     </scenes>
 </document>
