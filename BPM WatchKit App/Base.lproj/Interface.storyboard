@@ -14,12 +14,12 @@
             <objects>
                 <controller contentMode="scaleAspectFill" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button width="1" height="20" alignment="right" title="Echo Table &gt;" id="B7Z-Gf-DoH">
+                        <button width="1" height="20" alignment="right" hidden="YES" title="Echo Table &gt;" id="B7Z-Gf-DoH">
                             <connections>
-                                <segue destination="c4t-ha-grv" kind="push" id="xDp-NB-vza"/>
+                                <segue destination="c4t-ha-grv" kind="push" identifier="echoTable" id="xDp-NB-vza"/>
                             </connections>
                         </button>
-                        <button width="1" height="1" alignment="center" verticalAlignment="center" title="Tap" id="fLk-vP-RaI">
+                        <button width="1" height="1" heightAdjustment="-21" alignment="center" verticalAlignment="center" title="Tap" id="fLk-vP-RaI">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="backgroundColor" red="0.97683916579999996" green="1" blue="0.71662755919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" type="system" weight="heavy" pointSize="47"/>
@@ -29,6 +29,7 @@
                         </button>
                     </items>
                     <connections>
+                        <outlet property="echoButton" destination="B7Z-Gf-DoH" id="EMd-oy-fYi"/>
                         <outlet property="tapButton" destination="fLk-vP-RaI" id="1E3-JK-OH5"/>
                     </connections>
                 </controller>
@@ -65,6 +66,12 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="eighthNoteLbl" destination="1YZ-Fp-JHQ" id="0UH-4D-XWZ"/>
+                        <outlet property="halfNoteLbl" destination="YV5-jW-LrP" id="QET-aq-wDq"/>
+                        <outlet property="quaterNoteLbl" destination="Pe4-Nh-5cW" id="rfS-JF-xoF"/>
+                        <outlet property="wholdNoteLbl" destination="jGO-gQ-g7z" id="meL-Bv-iYR"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="308" y="2"/>

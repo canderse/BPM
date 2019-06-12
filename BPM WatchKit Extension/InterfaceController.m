@@ -46,6 +46,7 @@
         if([[NSDate date] timeIntervalSinceDate:lastEvent] > 100.f)
         {
             [self.tapButton setTitle:@"Tap"];
+            [self.echoButton setHidden:YES];
         }
     }
 }
@@ -57,10 +58,15 @@
     if(bpm)
     {
         [self.tapButton setTitle:[NSString stringWithFormat:@"%ld",bpm] ];
+        [self.echoButton setHidden:NO];
     }
     
 }
-    
+
+-(id) contextForSegueWithIdentifier:(NSString *)segueIdentifier
+{
+    return self.beatCounter;
+}
 
 @end
 

@@ -18,5 +18,6 @@
 -(void) checkActivity;
 @property BFBeatCounter * beatCounter;
 @property NSTimer * resetTimer;
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *echoButton;
 
 @end
