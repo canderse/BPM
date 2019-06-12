@@ -47,6 +47,7 @@
         {
             [self.tapButton setTitle:@"Tap"];
             [self.echoButton setHidden:YES];
+              [self.beatCounter reset];
         }
     }
 }
@@ -59,6 +60,7 @@
     {
         [self.tapButton setTitle:[NSString stringWithFormat:@"%ld",bpm] ];
         [self.echoButton setHidden:NO];
+      
     }
     
 }

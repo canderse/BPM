@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="-820.28985507246387" y="139.95535714285714"/>
         </scene>
-        <!--Echo View Controller-->
+        <!--Echo Table-->
         <scene sceneID="iaV-bY-Esb">
             <objects>
-                <viewController id="rXJ-Xj-bVJ" customClass="BFEchoViewController" sceneMemberID="viewController">
+                <viewController title="Echo Table" id="rXJ-Xj-bVJ" customClass="BFEchoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nOa-qk-QmD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
